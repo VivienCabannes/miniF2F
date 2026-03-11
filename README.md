@@ -44,14 +44,6 @@ test/aime_1983_p1/
 lake build
 ```
 
-## Proof Generation
-
-`gen_proofs.py` is a script that generates basic proof attempts for the `ground_truth.lean` files, using heuristics to select tactics based on problem category (substitution, induction, arithmetic, etc.):
-
-```bash
-python3 gen_proofs.py
-```
-
 ## License
 
 See the original [MiniF2F repository](https://github.com/openai/miniF2F) for licensing information.

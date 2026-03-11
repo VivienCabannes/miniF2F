@@ -7,4 +7,8 @@ theorem mathd_algebra_338
   (h₀ : 3 * a + b + c = -3)
   (h₁ : a + 3 * b + c = 9)
   (h₂ : a + b + 3 * c = 19) :
-  a * b * c = -56 := by sorry
+  a * b * c = -56 := by
+  have ha : a = -3 := by linarith
+  have hb : b = 5 := by linarith
+  have hc : c = 8 - (a + b) := by linarith
+  subst ha; subst hb; linarith
