@@ -1,7 +1,5 @@
 import Mathlib
 
-set_option maxHeartbeats 0
-
 open BigOperators Real Nat Topology Rat
 
 theorem amc12a_2002_p6

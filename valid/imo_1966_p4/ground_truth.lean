@@ -1,7 +1,5 @@
 import Mathlib
 
-set_option maxHeartbeats 0
-
 open BigOperators Real Nat Topology Rat
 
 theorem imo_1966_p4 (n : ℕ) (x : ℝ) (h₀ : ∀ k : ℕ, 0 < k → ∀ m : ℤ, x ≠ m * π / 2 ^ k)

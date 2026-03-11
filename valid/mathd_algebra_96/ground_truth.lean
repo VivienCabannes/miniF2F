@@ -1,7 +1,5 @@
 import Mathlib
 
-set_option maxHeartbeats 0
-
 open BigOperators Real Nat Topology Rat
 
 theorem mathd_algebra_96 (x y z a : ℝ) (h₀ : 0 < x ∧ 0 < y ∧ 0 < z)

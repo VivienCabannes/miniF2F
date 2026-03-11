@@ -1,7 +1,5 @@
 import Mathlib
 
-set_option maxHeartbeats 0
-
 open BigOperators Real Nat Topology Rat
 
 theorem mathd_algebra_421 (a b c d : ℝ) (h₀ : b = a ^ 2 + 4 * a + 6)

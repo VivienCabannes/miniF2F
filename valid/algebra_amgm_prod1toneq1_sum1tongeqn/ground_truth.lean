@@ -1,7 +1,5 @@
 import Mathlib
 
-set_option maxHeartbeats 0
-
 open BigOperators Real Nat Topology Rat
 
 theorem algebra_amgm_prod1toneq1_sum1tongeqn (a : ℕ → NNReal) (n : ℕ)

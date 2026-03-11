@@ -1,7 +1,5 @@
 import Mathlib
 
-set_option maxHeartbeats 0
-
 open BigOperators Real Nat Topology Rat
 
 theorem algebra_2complexrootspoly_xsqp49eqxp7itxpn7i (x : ℂ) :
