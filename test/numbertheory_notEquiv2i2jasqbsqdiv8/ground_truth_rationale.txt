@@ -1,0 +1,2 @@
+We attempt the proof by contradiction: assuming the equivalence holds.
+Instantiating $a=2$ and $b=0$, we can see $a^2+b^2=4$ which is not divisible by $8$. Hence the equivalence cannot hold.
