@@ -16,10 +16,10 @@ theorem aime_1983_p3
       have h₂₂ : Real.sqrt ((-9 + Real.sqrt 61) ^ 2 + (18 * (-9 + Real.sqrt 61) + 45)) = 5 := by
         have h₂₃ : (-9 + Real.sqrt 61) ^ 2 + (18 * (-9 + Real.sqrt 61) + 45) = 25 := by
           nlinarith [Real.sqrt_nonneg 61, Real.sq_sqrt (show 0 ≤ 61 by norm_num)]
-        rw [h₂₃]
-        rw [Real.sqrt_eq_iff_sq_eq] <;> nlinarith [Real.sqrt_nonneg 61, Real.sq_sqrt (show 0 ≤ 61 by norm_num)]
+        rw [h₂₃, show (25 : ℝ) = 5 ^ 2 from by norm_num]
+        exact Real.sqrt_sq (by norm_num : (0 : ℝ) ≤ 5)
       rw [h₂₂]
-      <;> nlinarith [Real.sqrt_nonneg 61, Real.sq_sqrt (show 0 ≤ 61 by norm_num)]
+      nlinarith [Real.sqrt_nonneg 61, Real.sq_sqrt (show (0 : ℝ) ≤ 61 by norm_num)]
     have h₂₃ : f (-9 + Real.sqrt 61) = 0 := h₂₁
     have h₂₄ : (-9 + Real.sqrt 61) ∈ f ⁻¹' {0} := by
       rw [Set.mem_preimage, Set.mem_singleton_iff]
@@ -32,10 +32,10 @@ theorem aime_1983_p3
       have h₃₂ : Real.sqrt ((-9 - Real.sqrt 61) ^ 2 + (18 * (-9 - Real.sqrt 61) + 45)) = 5 := by
         have h₃₃ : (-9 - Real.sqrt 61) ^ 2 + (18 * (-9 - Real.sqrt 61) + 45) = 25 := by
           nlinarith [Real.sqrt_nonneg 61, Real.sq_sqrt (show 0 ≤ 61 by norm_num)]
-        rw [h₃₃]
-        rw [Real.sqrt_eq_iff_sq_eq] <;> nlinarith [Real.sqrt_nonneg 61, Real.sq_sqrt (show 0 ≤ 61 by norm_num)]
+        rw [h₃₃, show (25 : ℝ) = 5 ^ 2 from by norm_num]
+        exact Real.sqrt_sq (by norm_num : (0 : ℝ) ≤ 5)
       rw [h₃₂]
-      <;> nlinarith [Real.sqrt_nonneg 61, Real.sq_sqrt (show 0 ≤ 61 by norm_num)]
+      nlinarith [Real.sqrt_nonneg 61, Real.sq_sqrt (show (0 : ℝ) ≤ 61 by norm_num)]
     have h₃₄ : f (-9 - Real.sqrt 61) = 0 := h₃₁
     have h₃₅ : (-9 - Real.sqrt 61) ∈ f ⁻¹' {0} := by
       rw [Set.mem_preimage, Set.mem_singleton_iff]
@@ -107,10 +107,10 @@ theorem aime_1983_p3
         rw [h₅₂]
         exact by simpa using h₃
   
-  have h₆ : (∏ x in (f ⁻¹' {0}).toFinset, x) = 20 := by
+  have h₆ : (∏ x ∈ (f ⁻¹' {0}).toFinset, x) = 20 := by
     rw [h₅]
-    have h₆₁ : ∏ x in ({ -9 + Real.sqrt 61, -9 - Real.sqrt 61 } : Finset ℝ), x = 20 := by
-      have h₆₂ : ∏ x in ({ -9 + Real.sqrt 61, -9 - Real.sqrt 61 } : Finset ℝ), x = ((-9 + Real.sqrt 61) * (-9 - Real.sqrt 61)) := by
+    have h₆₁ : ∏ x ∈ ({ -9 + Real.sqrt 61, -9 - Real.sqrt 61 } : Finset ℝ), x = 20 := by
+      have h₆₂ : ∏ x ∈ ({ -9 + Real.sqrt 61, -9 - Real.sqrt 61 } : Finset ℝ), x = ((-9 + Real.sqrt 61) * (-9 - Real.sqrt 61)) := by
         simp [Finset.prod_pair (show (-9 + Real.sqrt 61 : ℝ) ≠ -9 - Real.sqrt 61 by
           intro h
           nlinarith [Real.sqrt_nonneg 61, Real.sq_sqrt (show 0 ≤ 61 by norm_num)])]

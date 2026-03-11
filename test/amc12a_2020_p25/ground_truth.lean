@@ -2,6 +2,11 @@ import Mathlib
 
 open BigOperators Real Nat Topology Rat
 
+-- Explore the types involved
+#check @Rat.num
+#check @Rat.den
+#check Rat.num_div_den
+
 theorem amc12a_2020_p25
   (a : ℚ)
   (S : Finset ℝ)

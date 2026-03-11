@@ -55,7 +55,7 @@ lemma algebra_apbmpcneq0_aeq0anbeq0anceq0_intermediate_result_4 (m : ℝ) (hm : 
         have h11 : ∃ (a b : ℤ), q = (a : ℚ) / (b : ℚ) ∧ (a : ℤ).gcd (b : ℤ) = 1 ∧ b > 0 := by
           refine' ⟨q.num, q.den, ?_, ?_, ?_⟩
           ·
-            field_simp
+            exact (Rat.num_div_den q).symm
           ·
             exact_mod_cast q.reduced
           ·
@@ -112,11 +112,7 @@ lemma algebra_apbmpcneq0_aeq0anbeq0anceq0_intermediate_result_4 (m : ℝ) (hm : 
         have h13 : (2 : ℤ) ∣ b := by
           omega
         have h14 : (2 : ℤ) ∣ Int.gcd (a : ℤ) (b : ℤ) := by
-          apply Int.dvd_gcd
-          ·
-            exact h12
-          ·
-            exact h13
+          exact_mod_cast Int.dvd_gcd h12 h13
         have h15 : Int.gcd (a : ℤ) (b : ℤ) = 1 := by
           exact_mod_cast h4
         have h17 : (2 : ℤ) ∣ (1 : ℤ) := by
@@ -162,7 +158,7 @@ lemma algebra_apbmpcneq0_aeq0anbeq0anceq0_intermediate_result_4 (m : ℝ) (hm : 
       have h11 : ∃ (a b : ℤ), r = (a : ℚ) / (b : ℚ) ∧ (a : ℤ).gcd (b : ℤ) = 1 ∧ b > 0 := by
         refine' ⟨r.num, r.den, ?_, ?_, ?_⟩
         ·
-          field_simp
+          exact (Rat.num_div_den r).symm
         ·
           exact_mod_cast r.reduced
         ·
@@ -219,11 +215,7 @@ lemma algebra_apbmpcneq0_aeq0anbeq0anceq0_intermediate_result_4 (m : ℝ) (hm : 
       have h13 : (2 : ℤ) ∣ b := by
         omega
       have h14 : (2 : ℤ) ∣ Int.gcd (a : ℤ) (b : ℤ) := by
-        apply Int.dvd_gcd
-        ·
-          exact h12
-        ·
-          exact h13
+        exact_mod_cast Int.dvd_gcd h12 h13
       have h15 : Int.gcd (a : ℤ) (b : ℤ) = 1 := by
         exact_mod_cast h4
       have h17 : (2 : ℤ) ∣ (1 : ℤ) := by
@@ -313,16 +305,10 @@ theorem algebra_apbmpcneq0_aeq0anbeq0anceq0 (a b c : ℚ) (m n : ℝ) (h₀ : 0 
     have eq4 : (m : ℝ) = (-a / b : ℚ) := by
       have hb' : (b : ℝ) ≠ 0 := by
         exact_mod_cast h
-      field_simp at *
-      have eq5 : (b : ℝ) * m + (a : ℝ) = 0 := by
-        linarith [eq3]
-      have eq6 : (m : ℝ) = (-a / b : ℝ) := by
-        field_simp at *
-        nlinarith
-      have eq7 : (-a / b : ℝ) = (-a / b : ℚ) := by
-        norm_num
-      rw [eq7] at eq6
-      linarith
+      have eq5 : (b : ℝ) * m + (a : ℝ) = 0 := by linarith [eq3]
+      have eq6 : (m : ℝ) = -(a : ℝ) / (b : ℝ) := by field_simp; linarith [eq5]
+      have eq7 : (-(a : ℝ) / (b : ℝ)) = ((-a / b : ℚ) : ℝ) := by push_cast; ring
+      linarith [eq6, eq7]
     have h6 : m ^ 3 = (2 : ℝ) := h₁
     rw [show (m : ℝ) = (-a / b : ℚ) by linarith [eq4]] at h6
     have h10 : ((-a / b : ℚ) : ℝ) ^ 3 = (2 : ℝ) := by
@@ -335,7 +321,7 @@ theorem algebra_apbmpcneq0_aeq0anbeq0anceq0 (a b c : ℚ) (m n : ℝ) (h₀ : 0 
       have h11 : ∃ (a b : ℤ), r = (a : ℚ) / (b : ℚ) ∧ (a : ℤ).gcd (b : ℤ) = 1 ∧ b > 0 := by
         refine' ⟨r.num, r.den, ?_, ?_, ?_⟩
         ·
-          field_simp
+          exact (Rat.num_div_den r).symm
         ·
           exact_mod_cast r.reduced
         ·
@@ -392,11 +378,7 @@ theorem algebra_apbmpcneq0_aeq0anbeq0anceq0 (a b c : ℚ) (m n : ℝ) (h₀ : 0 
       have h13 : (2 : ℤ) ∣ b := by
         omega
       have h14 : (2 : ℤ) ∣ Int.gcd (a : ℤ) (b : ℤ) := by
-        apply Int.dvd_gcd
-        ·
-          exact h12
-        ·
-          exact h13
+        exact_mod_cast Int.dvd_gcd h12 h13
       have h15 : Int.gcd (a : ℤ) (b : ℤ) = 1 := by
         exact_mod_cast h4
       have h17 : (2 : ℤ) ∣ (1 : ℤ) := by

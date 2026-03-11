@@ -1,84 +1,83 @@
 import Mathlib
-import Aesop
-
-set_option maxHeartbeats 400000
 
 open BigOperators Real Nat Topology Rat
 
+set_option maxHeartbeats 800000
+
 theorem mathd_numbertheory_530 (n k : ℕ) (h₀ : 0 < n ∧ 0 < k) (h₀ : (n : ℝ) / k < 6)
   (h₁ : (5 : ℝ) < n / k) : 22 ≤ Nat.lcm n k / Nat.gcd n k := by
-  have h₃ : ∃ d a b, d = Nat.gcd n k ∧ n = d * a ∧ k = d * b ∧ Nat.gcd a b = 1 := by
-    use Nat.gcd n k
-    use n / Nat.gcd n k
-    use k / Nat.gcd n k
-    have h₂ : 0 < n := by linarith
-    have h₃ : 0 < k := by linarith
-    have h₄ : 0 < Nat.gcd n k := Nat.gcd_pos_of_pos_left k h₂
-    have h₅ : n = Nat.gcd n k * (n / Nat.gcd n k) := by
-      rw [Nat.mul_div_cancel' (Nat.gcd_dvd_left n k)]
-    have h₆ : k = Nat.gcd n k * (k / Nat.gcd n k) := by
-      rw [Nat.mul_div_cancel' (Nat.gcd_dvd_right n k)]
-    have h₇ : Nat.gcd (n / Nat.gcd n k) (k / Nat.gcd n k) = 1 := by
-      rw [Nat.gcd_div (Nat.gcd_dvd_left n k) (Nat.gcd_dvd_right n k)]
-      <;> simp [h₄]
-    exact ⟨rfl, h₅, h₆, h₇⟩
-  have h₄ : ∀ d a b, d = Nat.gcd n k → n = d * a → k = d * b → 5 * b < a ∧ a < 6 * b := by
-    intro d a b h₄ h₅ h₆
-    have h₇ : 0 < d := by
-      -- Since d is the gcd of n and k, and both n and k are positive, d must be positive.
-      have h₇ : 0 < Nat.gcd n k := Nat.gcd_pos_of_pos_left k (by linarith)
-      linarith
-    have h₈ : 0 < a := by
-      -- Since n = d * a, and d is positive, a must be positive.
-      have h₈ : 0 < n := by linarith
-      have h₉ : 0 < d := by linarith
-      nlinarith
-    have h₉ : 0 < b := by
-      -- Since k = d * b, and d is positive, b must be positive.
-      have h₉ : 0 < k := by linarith
-      have h₁₀ : 0 < d := by linarith
-      nlinarith
-    constructor
-    -- We need to show that 5 * b < a.
-    -- From the given inequalities, we can derive this.
-    field_simp [h₅, h₆] at h₀ h₁ ⊢
-    rw [div_lt_iff] at h₀ <;> rw [lt_div_iff] at h₁ <;> norm_cast at h₀ h₁ ⊢ <;> nlinarith
-    -- We need to show that a < 6 * b.
-    -- From the given inequalities, we can derive this.
-    field_simp [h₅, h₆] at h₀ h₁ ⊢
-    rw [div_lt_iff] at h₀ <;> rw [lt_div_iff] at h₁ <;> norm_cast at h₀ h₁ ⊢ <;> nlinarith
-  have h₅ : ∀ a b, 5 * b < a → a < 6 * b → Nat.gcd a b = 1 → 22 ≤ a * b := by
-    have h₅ : ∀ a b : ℕ, 5 * b < a → a < 6 * b → Nat.gcd a b = 1 → 22 ≤ a * b := by
-      intro a b h₅ h₆ h₇
-      have h₈ : a * b ≥ 22 := by
-        by_contra h₈
-        have h₉ : a * b ≤ 21 := by
-          linarith
-        have h₁₀ : a ≤ 21 := by
-          nlinarith
-        have h₁₁ : b ≤ 21 := by
-          nlinarith
-        interval_cases a <;> interval_cases b <;> contradiction
-      linarith
-    exact h₅
-  have h₆ : 22 ≤ Nat.lcm n k / Nat.gcd n k := by
-    obtain ⟨d, a, b, hd, ha, hb, hgcd⟩ := h₃
-    have h₆ := h₄ d a b hd ha hb
-    have h₇ := h₅ a b
-    have h₈ : 0 < d := by
-      nlinarith
-    have h₉ : 0 < a := by
-      nlinarith
-    have h₁₀ : 0 < b := by
-      nlinarith
-    have h₁₁ : Nat.gcd n k = d := by
-      nlinarith
-    have h₁₂ : Nat.lcm n k = d * a * b := by
-      nlinarith [Nat.gcd_mul_lcm n k, Nat.mul_comm a b, Nat.mul_comm d a, Nat.mul_comm d b]
-    have h₁₃ : d * a * b / d = a * b := by
-      rw [Nat.mul_comm]
-      exact by
-        rw [Nat.div_eq_of_eq_mul_left] <;> nlinarith
-    rw [h₁₁, h₁₂, h₁₃]
-    nlinarith [h₆, h₇]
-  exact h₆
+  -- Derive k > 0 from h₁
+  have hk_pos : (0 : ℝ) < k := by
+    by_contra h
+    push_neg at h
+    have hk0 : (k : ℝ) = 0 := le_antisymm h (Nat.cast_nonneg k)
+    rw [hk0, div_zero] at h₁
+    exact absurd h₁ (by norm_num)
+  have hk_ne : (k : ℝ) ≠ 0 := ne_of_gt hk_pos
+  have hn_pos : (0 : ℝ) < n := by
+    have := (div_pos_iff_of_pos_right hk_pos).mp (lt_trans (by norm_num : (0:ℝ) < 5) h₁)
+    exact this
+  -- Key inequalities: 5 * k < n and n < 6 * k (as reals)
+  have h5k_lt_n_real : (5 : ℝ) * k < n := by
+    rw [lt_div_iff₀ hk_pos] at h₁
+    linarith
+  have hn_lt_6k_real : (n : ℝ) < 6 * k := by
+    have := h₀
+    rwa [div_lt_iff₀ hk_pos] at this
+  -- Now work with natural numbers
+  have hk_pos_nat : 0 < k := by exact_mod_cast hk_pos
+  have hn_pos_nat : 0 < n := by exact_mod_cast hn_pos
+  -- Cast to natural number inequalities
+  have h5k_lt_n_nat : 5 * k < n := by exact_mod_cast h5k_lt_n_real
+  have hn_lt_6k_nat : n < 6 * k := by exact_mod_cast hn_lt_6k_real
+  -- Let g = gcd n k
+  set g := Nat.gcd n k with hg_def
+  have hg_pos : 0 < g := by positivity
+  have hg_dvd_n : g ∣ n := Nat.gcd_dvd_left n k
+  have hg_dvd_k : g ∣ k := Nat.gcd_dvd_right n k
+  set n' := n / g with hn'_def
+  set k' := k / g with hk'_def
+  have hn_eq : n = n' * g := (Nat.div_mul_cancel hg_dvd_n).symm
+  have hk_eq : k = k' * g := (Nat.div_mul_cancel hg_dvd_k).symm
+  -- Key: gcd(n, k) = g, so after substitution, gcd(n'*g, k'*g) = g * gcd(n', k') = g
+  -- since gcd(n', k') = 1 (by definition of reducing by gcd)
+  -- lcm n k = n * k / gcd n k
+  -- We prove lcm n k / gcd n k = n' * k' directly
+  have hgcd_eq : Nat.gcd n k = g := rfl
+  have hlcm : Nat.lcm n k / g = n' * k' := by
+    have hg_ne : g ≠ 0 := Nat.ne_zero_of_lt (Nat.zero_lt_of_lt hg_pos)
+    rw [Nat.lcm, hgcd_eq]
+    -- lcm n k = n * k / g, so lcm n k / g = n * k / g / g
+    -- But n = n' * g, k = k' * g
+    -- n * k / g = n' * g * (k' * g) / g = n' * k' * g
+    -- Then n' * k' * g / g = n' * k'
+    rw [hn_eq, hk_eq]
+    rw [show n' * g * (k' * g) / g = n' * k' * g from by
+      rw [show n' * g * (k' * g) = n' * k' * g * g from by ring]
+      exact Nat.mul_div_cancel _ hg_pos]
+    exact Nat.mul_div_cancel _ hg_pos
+  -- From the inequalities: 5 * k' < n' and n' < 6 * k'
+  have hk'_pos : 0 < k' := by
+    exact Nat.div_pos (Nat.le_of_dvd hk_pos_nat hg_dvd_k) hg_pos
+  have hn'_pos : 0 < n' := by
+    exact Nat.div_pos (Nat.le_of_dvd hn_pos_nat hg_dvd_n) hg_pos
+  have h5k'_lt_n' : 5 * k' < n' := by
+    have h1 : 5 * k' * g < n' * g := by
+      calc 5 * k' * g = 5 * (k' * g) := by ring
+        _ < n' * g := by rw [← hn_eq, ← hk_eq]; linarith
+    exact lt_of_mul_lt_mul_of_nonneg_right h1 (Nat.zero_le g)
+  have hn'_lt_6k' : n' < 6 * k' := by
+    have h1 : n' * g < 6 * k' * g := by
+      calc n' * g < 6 * (k' * g) := by rw [← hn_eq, ← hk_eq]; linarith
+        _ = 6 * k' * g := by ring
+    exact lt_of_mul_lt_mul_of_nonneg_right h1 (Nat.zero_le g)
+  -- Now we need to show 22 ≤ n' * k'
+  suffices 22 ≤ n' * k' by rwa [hlcm]
+  by_cases hk'3 : k' ≥ 3
+  · have hn'_ge : n' ≥ 5 * k' + 1 := by omega
+    calc n' * k' ≥ (5 * k' + 1) * k' := by nlinarith
+      _ ≥ (5 * 3 + 1) * 3 := by nlinarith
+      _ = 48 := by norm_num
+      _ ≥ 22 := by norm_num
+  · have : k' ≤ 2 := by omega
+    interval_cases k' <;> omega

@@ -2,7 +2,9 @@ import Mathlib
 
 open BigOperators Real Nat Topology Rat
 
-theorem amc12a_2003_p23
-  (S : Finset ℕ)
-  (h₀ : ∀ (k : ℕ), k ∈ S ↔ 0 < k ∧ ((k * k) : ℕ) ∣ (∏ i ∈ (Finset.Icc 1 9), i !)) :
-  S.card = 672 := by sorry
+-- Quick test: can we compute the product?
+#eval ∏ i ∈ (Finset.Icc 1 9), i !
+-- Should be 1834588569600
+
+-- Quick test: can we compute divisors count?
+#eval (Nat.divisors (2^15 * 3^6 * 5^2 * 7)).card

@@ -29,8 +29,8 @@ theorem algebra_bleqa_apbon2msqrtableqambsqon8b
       <;> simp [y]
     rw [h₁₀₁, h₁₀₂]
     have h₁₀₃ : Real.sqrt ((x ^ 2) * (y ^ 2)) = x * y := by
-      rw [Real.sqrt_eq_iff_sq_eq (by positivity) (by positivity)]
-      nlinarith
+      rw [show x ^ 2 * y ^ 2 = (x * y) ^ 2 from by ring]
+      exact Real.sqrt_sq (by positivity : (0 : ℝ) ≤ x * y)
     have h₁₀₄ : (x ^ 2 + y ^ 2) / 2 - Real.sqrt ((x ^ 2) * (y ^ 2)) = (x - y) ^ 2 / 2 := by
       rw [h₁₀₃]
       ring_nf
@@ -77,7 +77,7 @@ theorem algebra_bleqa_apbon2msqrtableqambsqon8b
         have h₁₂₉ : 4 * y ^ 2 ≤ (x + y) ^ 2 := h₁₂₆
         have h₁₃₀ : 0 < 8 * y ^ 2 := by positivity
         have h₁₃₁ : 0 < (x - y) ^ 2 * (x + y) ^ 2 := by positivity
-        rw [div_le_div_iff (by positivity) (by positivity)]
+        rw [div_le_div_iff₀ (by positivity) (by positivity)]
         nlinarith [sq_nonneg (x - y), sq_nonneg (x + y), sq_nonneg (x - 3 * y),
           sq_nonneg (x + 3 * y)]
     exact h₁₂₇

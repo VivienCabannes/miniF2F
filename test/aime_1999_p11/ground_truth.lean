@@ -11,10 +11,10 @@ theorem aime_1999_p11
   (h₁ : ∑ k ∈ Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * π / 180) = Real.tan (m * π / 180))
   (h₂ : (m.num:ℝ) / m.den < 90) :
   ↑m.den + m.num = 177 := by
-  have h_sum : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) := by
-    have h₁ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) := by
-      have h₂ : 2 * Real.sin (2.5 * Real.pi / 180) * (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = 2 * Real.cos (2.5 * Real.pi / 180) := by
-        have h₃ : 2 * Real.sin (2.5 * Real.pi / 180) * (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = ∑ k in Finset.Icc (1 : ℕ) 35, (2 * Real.sin (2.5 * Real.pi / 180) * Real.sin (5 * k * Real.pi / 180)) := by
+  have h_sum : (∑ k ∈ Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) := by
+    have h₁ : (∑ k ∈ Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) := by
+      have h₂ : 2 * Real.sin (2.5 * Real.pi / 180) * (∑ k ∈ Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = 2 * Real.cos (2.5 * Real.pi / 180) := by
+        have h₃ : 2 * Real.sin (2.5 * Real.pi / 180) * (∑ k ∈ Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = ∑ k ∈ Finset.Icc (1 : ℕ) 35, (2 * Real.sin (2.5 * Real.pi / 180) * Real.sin (5 * k * Real.pi / 180)) := by
           rw [Finset.mul_sum]
           <;>
           simp [mul_assoc]
@@ -54,12 +54,12 @@ theorem aime_1999_p11
           field_simp
           <;>
           ring_nf
-        have h₅ : ∑ k in Finset.Icc (1 : ℕ) 35, (2 * Real.sin (2.5 * Real.pi / 180) * Real.sin (5 * k * Real.pi / 180)) = ∑ k in Finset.Icc (1 : ℕ) 35, (Real.cos ((5 * k - 2.5) * Real.pi / 180) - Real.cos ((5 * k + 2.5) * Real.pi / 180)) := by
+        have h₅ : ∑ k ∈ Finset.Icc (1 : ℕ) 35, (2 * Real.sin (2.5 * Real.pi / 180) * Real.sin (5 * k * Real.pi / 180)) = ∑ k ∈ Finset.Icc (1 : ℕ) 35, (Real.cos ((5 * k - 2.5) * Real.pi / 180) - Real.cos ((5 * k + 2.5) * Real.pi / 180)) := by
           apply Finset.sum_congr rfl
           intro k hk
           rw [h₄ k hk]
         rw [h₅]
-        have h₆ : ∑ k in Finset.Icc (1 : ℕ) 35, (Real.cos ((5 * k - 2.5) * Real.pi / 180) - Real.cos ((5 * k + 2.5) * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) - Real.cos (177.5 * Real.pi / 180) := by
+        have h₆ : ∑ k ∈ Finset.Icc (1 : ℕ) 35, (Real.cos ((5 * k - 2.5) * Real.pi / 180) - Real.cos ((5 * k + 2.5) * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) - Real.cos (177.5 * Real.pi / 180) := by
           norm_num [Finset.sum_Icc_succ_top, Nat.cast_add, Nat.cast_one, Nat.cast_mul, Nat.cast_ofNat]
           <;>
           ring_nf at *
@@ -118,10 +118,10 @@ theorem aime_1999_p11
         <;>
           linarith [Real.pi_gt_three]
       have h₄ : Real.sin (2.5 * Real.pi / 180) ≠ 0 := by linarith
-      have h₅ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) := by
-        have h₅₁ : 2 * Real.sin (2.5 * Real.pi / 180) * (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = 2 * Real.cos (2.5 * Real.pi / 180) := by
+      have h₅ : (∑ k ∈ Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) := by
+        have h₅₁ : 2 * Real.sin (2.5 * Real.pi / 180) * (∑ k ∈ Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = 2 * Real.cos (2.5 * Real.pi / 180) := by
           exact h₂
-        have h₅₂ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) := by
+        have h₅₂ : (∑ k ∈ Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) := by
           field_simp at h₅₁ ⊢
           <;>
           nlinarith [Real.sin_le_one (2.5 * Real.pi / 180), Real.cos_le_one (2.5 * Real.pi / 180),
@@ -130,7 +130,7 @@ theorem aime_1999_p11
       exact h₅
     exact h₁
   
-  have h_sum_tan : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.tan (35 * Real.pi / 72) := by
+  have h_sum_tan : (∑ k ∈ Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180)) = Real.tan (35 * Real.pi / 72) := by
     rw [h_sum]
     have h₃ : Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) = Real.tan (35 * Real.pi / 72) := by
       have h₄ : Real.cos (2.5 * Real.pi / 180) / Real.sin (2.5 * Real.pi / 180) = Real.tan (35 * Real.pi / 72) := by

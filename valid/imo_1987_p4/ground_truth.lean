@@ -154,42 +154,27 @@ lemma round3_fixed_point_80629522 (P : ℕ → ℕ) (h_P_prop : ∀ n, n < 1987 
     have h_P_Pn_eq_n : P (P n) = n := h_P_prop n hnS
     simpa [g] using h_P_Pn_eq_n
   have h_card_A_eq_card_B : Finset.card A = Finset.card B := by
-    apply Finset.card_congr (fun n _ => P n)
-    · intro n hn
+    apply Finset.card_nbij' P P
+    · -- P maps A to B
+      intro n hn
+      rw [Finset.mem_coe] at hn ⊢
       exact h_g_maps_A_to_B n hn
-    · intro n hn m hm h_eq
+    · -- P maps B to A
+      intro m hm
+      rw [Finset.mem_coe] at hm ⊢
+      exact h_g_maps_B_to_A m hm
+    · -- P is left inverse on A
+      intro n hn
+      rw [Finset.mem_coe] at hn
       have hnS : n < 1987 := by
-        simp only [A, S, Finset.mem_filter, Finset.mem_range] at hn
-        linarith
+        simp only [A, S, Finset.mem_filter, Finset.mem_range] at hn; exact hn.1
+      exact h_P_prop n hnS
+    · -- P is right inverse on B
+      intro m hm
+      rw [Finset.mem_coe] at hm
       have hmS : m < 1987 := by
-        simp only [A, S, Finset.mem_filter, Finset.mem_range] at hm
-        linarith
-      have h_P_Pn_eq_n : P (P n) = n := h_P_prop n hnS
-      have h_P_Pm_eq_m : P (P m) = m := h_P_prop m hmS
-      have h_Pn_eq_Pm : P n = P m := by simpa [g] using h_eq
-      have h_n_eq_m : n = m := by
-        have h1 : P (P n) = P (P m) := by rw [h_Pn_eq_Pm]
-        rw [h_P_Pn_eq_n, h_P_Pm_eq_m] at h1
-        exact h1
-      exact h_n_eq_m
-    · intro m hm
-      use P m
-      have hmS : m < 1987 := by
-        simp only [B, S, Finset.mem_filter, Finset.mem_range] at hm
-        linarith
-      have h_P_Pm_eq_m : P (P m) = m := h_P_prop m hmS
-      have h_Pm_in_A : P m ∈ A := by
-        have h_Pm_lt_1987 : P m < 1987 := h_P_bound m hmS
-        have h_Pm_lt_m : P m < m := by
-          simp only [B, S, Finset.mem_filter, Finset.mem_range] at hm
-          linarith
-        have h_P_Pm_gt_Pm : P (P m) > P m := by
-          rw [h_P_Pm_eq_m]
-          linarith
-        simp only [A, S, Finset.mem_filter, Finset.mem_range]
-        exact ⟨h_Pm_lt_1987, h_P_Pm_gt_Pm⟩
-      refine ⟨h_Pm_in_A, ?_⟩
-      exact h_P_Pm_eq_m
+        simp only [B, S, Finset.mem_filter, Finset.mem_range] at hm; exact hm.1
+      exact h_P_prop m hmS
   omega
 
 
