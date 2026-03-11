@@ -1,0 +1,5 @@
+It is best to get rid of the [[absolute value]]s first. 
+
+Under the given circumstances, we notice that $|x-p|=x-p$, $|x-15|=15-x$, and $|x-p-15|=15+p-x$.
+
+Adding these together, we find that the sum is equal to $30-x$, which attains its minimum value (on the given interval $p \leq x \leq 15$) when $x=15$, giving a minimum of $015$.

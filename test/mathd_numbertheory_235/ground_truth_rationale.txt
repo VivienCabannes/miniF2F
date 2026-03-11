@@ -1,0 +1,1 @@
+$9 \cdot 9 + 1 \cdot 1 = 81 + 1 = 82$, so the units digit is $2$.

@@ -1,0 +1,1 @@
+Let $f(x) = x^2 - 4\sqrt{x} + 1$. What is $f(f(4))$? Show that it is 70.

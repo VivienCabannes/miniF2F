@@ -1,0 +1,11 @@
+Substituting, we get:
+
+$\lfloor 10N \rfloor$ = $\lfloor \frac {10}{3} \rfloor = 3$
+
+$\lfloor 100N \rfloor$ = $\lfloor \frac {100}{3} \rfloor = 33$
+
+$\lfloor 1000N \rfloor$ = $\lfloor \frac {1000}{3} \rfloor = 333$
+
+$\lfloor 10000N \rfloor$ = $\lfloor \frac {10000}{3} \rfloor = 3333$
+
+Adding these values, we get $3+33+333+3333 = 3702$

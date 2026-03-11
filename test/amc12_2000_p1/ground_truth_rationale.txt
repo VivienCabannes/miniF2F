@@ -1,0 +1,3 @@
+The sum is the highest if two [[factor]]s are the lowest.
+
+So, $1 \cdot 3 \cdot 667 = 2001$ and $1+3+667=671 \Longrightarrow \text{(E)}$.

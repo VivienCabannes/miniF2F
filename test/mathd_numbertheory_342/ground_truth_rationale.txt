@@ -1,0 +1,1 @@
+$54 = 9 \cdot 6 + 0 \Rightarrow 54 \equiv 0 \pmod{6}$.

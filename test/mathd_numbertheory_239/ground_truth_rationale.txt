@@ -1,0 +1,5 @@
+Grouping residues helps make some series computations easier:  \begin{align*}
+1 + 2 + 3 + 0 + 1 + 2& + 3 + 0 + 1 + 2 + 3 + 0\\&\equiv 3(1 + 2 + 3 + 0) \\
+&\equiv 18\\
+& \equiv 2 \pmod{4}.
+\end{align*}

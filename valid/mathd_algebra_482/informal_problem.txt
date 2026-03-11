@@ -1,0 +1,1 @@
+If two (positive) prime numbers are roots of the equation $x^2-12x+k=0$, what is the value of $k$? Show that it is 35.

@@ -1,0 +1,7 @@
+By Ravi substitution, let $a = y+z$, $b = z+x$, $c = x+y$. Then, the triangle condition becomes $x, y, z > 0$. After some manipulation, the inequality becomes:
+
+$xy^3 + yz^3 + zx^3 \geq xyz(x+y+z)$.
+
+By Cauchy, we have: 
+
+$(xy^3 + yz^3 + zx^3)(z+x+y) \geq xyz(y+z+x)^2$ with equality if and only if $\frac{xy^3}{z} = \frac{yz^3}{x} =\frac{zx^3}{y}$. So the inequality holds with equality if and only if x = y = z. Thus the original inequality has equality if and only if the triangle is equilateral.

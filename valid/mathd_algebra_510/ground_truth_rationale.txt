@@ -1,0 +1,1 @@
+The distance from $(x, y)$ to the origin is $\sqrt{x^2 + y^2}$. We note that $x^2 + y^2 = x^2 + 2xy + y^2 - 2xy = (x + y)^2 - 2xy$, so $\sqrt{x^2 + y^2} = \sqrt{13^2-48} = \sqrt{121} = 11$.

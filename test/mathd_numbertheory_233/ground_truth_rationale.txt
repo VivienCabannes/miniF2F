@@ -1,0 +1,1 @@
+Since $5 \times 24 = 120 = 121 - 1$, it follows that $-5 \times 24 \equiv 1 \pmod{121}$. Adding 121 to $-5$ to make it positive, we find $(-5 + 121) \times 24 \equiv 116 \times 24 \equiv 1 \pmod{121}$, so it follows that the modular inverse of $24$ is $116$ when taken modulo $121$.

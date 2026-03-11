@@ -1,0 +1,1 @@
+Evaluate $\log_{5^2}5^4$. Show that it is 2.

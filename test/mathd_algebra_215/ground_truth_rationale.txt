@@ -1,0 +1,1 @@
+Expanding the left side, we have $x^2+6x+9=121 \Rightarrow x^2+6x-112=0$. For a quadratic with the equation $ax^2+bx+c=0$, the sum of the roots is $-b/a$. Applying this formula to the problem, we have that the sum of the two roots is $-6/1=-6$.

@@ -1,0 +1,1 @@
+$17 \cdot 18 \equiv 1 \cdot 2 \equiv 2 \pmod{4}$.

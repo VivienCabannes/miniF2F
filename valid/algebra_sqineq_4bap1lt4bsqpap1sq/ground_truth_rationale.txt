@@ -1,0 +1,1 @@
+The result comes from $x^2+y^2 \geq 2xy$ for all reals $x,y$, applied to $x=2b$ and $y=a+1$.

@@ -1,0 +1,1 @@
+We have $ac + bc = (a+b)c=2c^2=2i^2=-2$

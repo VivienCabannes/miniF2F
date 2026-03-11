@@ -1,0 +1,1 @@
+How many positive three-digit integers are congruent to $7 \pmod{19}?$ Show that it is 48.

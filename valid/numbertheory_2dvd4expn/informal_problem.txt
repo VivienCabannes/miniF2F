@@ -1,0 +1,1 @@
+Show that for any positive integer $n$, $2$ divides $4^n$.

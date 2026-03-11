@@ -1,0 +1,2 @@
+Because $a, b, c, d$ are positive real numbers, so is $a+b+c+d$.
+Therefore it suffices to prove $(a^2 / b + b^2 / c + c^2 / d + d^2 / a)(a+b+c+d) \geq (a + b + c + d)^2$. By Cauchy-Schwarz, the left hand side has $(a^2 / b + b^2 / c + c^2 / d + d^2 / a)(a+b+c+d) \geq (\frac{a}{\sqrt{b}}*\sqrt{b} + \frac{b}{\sqrt{c}}*\sqrt{c} + \frac{c}{\sqrt{d}}*\sqrt{d} + \frac{d}{\sqrt{a}}*\sqrt{a})^2=RHS$. Hence the inequality holds.

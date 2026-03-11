@@ -1,0 +1,10 @@
+We begin with a system of two equations \begin{align*}
+2d&=17e-8
+\\2e&=d-9
+\end{align*}Since the second equation can also be rewritten as $d=2e+9$, we can plug this expression for $d$ back into the first equation and solve for $e$ \begin{align*}
+2d&=17e-8
+\\\Rightarrow \qquad 2(2e+9)&=17e-8
+\\\Rightarrow \qquad 4e+18&=17e-8
+\\\Rightarrow \qquad -13e&=-26
+\\\Rightarrow \qquad e&=2.
+\end{align*}

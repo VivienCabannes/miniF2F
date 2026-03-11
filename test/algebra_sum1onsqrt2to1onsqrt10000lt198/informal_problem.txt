@@ -1,0 +1,1 @@
+Show that $\sum_{k=2}^{10000} \frac{1}{\sqrt{k}} < 198$.

@@ -1,0 +1,6 @@
+Because \[
+4^{a\cdot b\cdot c\cdot d}
+= \left(\left(\left(4^a\right)^b\right)^c\right)^d
+= \left(\left( 5^b\right)^c\right)^d
+= \left(6^c\right)^d = 7^d = 8 = 4^{3/2},
+\]we have $a\cdot b\cdot c\cdot d = \frac{3}{2}$.

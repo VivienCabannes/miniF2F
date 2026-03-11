@@ -1,0 +1,1 @@
+Expand $(x+3)(2x-6)$. Show that it is 2x^2-18.

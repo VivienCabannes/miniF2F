@@ -1,0 +1,1 @@
+Notice that $10=2\cdot 5$. Both are factors of $9!$, so the remainder is $0$.

@@ -1,0 +1,1 @@
+Since $\pi$ is about 3.14, we use the second case, so $f(\pi) = 2$.

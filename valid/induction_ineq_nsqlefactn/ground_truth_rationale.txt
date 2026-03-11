@@ -1,0 +1,2 @@
+First, we observe that $n \leq (n-1)(n-2)$ as $n^2 - 4n + 2$ is positive for $n \geq 4$.
+As a result, $(n-1)! \geq (n-1) (n-2) \geq n$. By multiplying by $n$ on each side, we get $n! \geq n^2$.

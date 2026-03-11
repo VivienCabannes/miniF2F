@@ -1,0 +1,1 @@
+Sum all three equations to find that $6x+6y+6z=17+14+41$, from which $x+y+z=72/6=12$.

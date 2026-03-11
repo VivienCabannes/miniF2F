@@ -1,0 +1,1 @@
+We have that $0 \leq (a-b)^2 = a^2 - 2ab + b^2$. Since $a^2 + b^2 = 2$, the expression becomes $0 \leq 2 - 2ab$. As a result, $ab \leq 1$.

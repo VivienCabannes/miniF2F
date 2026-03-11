@@ -1,0 +1,4 @@
+We have that $\frac{a+b}{2} - \sqrt{ab} = \frac{\left(\sqrt{a} - \sqrt{b}\right)^2}{2}$.
+But $\frac{\left(\sqrt{a} - \sqrt{b}\right)^2}{2} = \frac{(a-b)^2}{2 (\sqrt{a} + \sqrt{b})^2}$ so $\frac{a+b}{2} - \sqrt{ab} = \frac{(a-b)^2}{2 (\sqrt{a} + \sqrt{b})^2}$.
+Since $a \geq b$, $2(\sqrt{a} + \sqrt{b})^2 \geq 2 (2\sqrt{b})^2 = 8b$ and $\frac{(a-b)^2}{2 (\sqrt{a} + \sqrt{b})^2} \leq \frac{(a-b)^2}{8b}$.
+As a result, $\frac{a+b}{2} - \sqrt{ab} \leq \frac{(a-b)^2}{8b}$.

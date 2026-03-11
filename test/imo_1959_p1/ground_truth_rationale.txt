@@ -1,0 +1,5 @@
+Denoting the greatest common divisor of $a, b $ as $(a,b) $, we use the [[Euclidean algorithm]]:
+
+$(21n+4, 14n+3) = (7n+1, 14n+3) = (7n+1, 1) = 1$
+
+It follows that $\frac{21n+4}{14n+3}$ is irreducible.  Q.E.D.

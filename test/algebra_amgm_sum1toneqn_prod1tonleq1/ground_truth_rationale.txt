@@ -1,0 +1,5 @@
+By the arithmetic-geometric mean inequality, we have that:
+$$\frac{\sum_{i=1}^n a_i}{n} \geq \left(\prod_{i=1}^n a_i\right)^\frac{1}{n}$$
+Since $\sum_{i=1}^n a_i = n$, the inequality becomes:
+$$1 \geq \left(\prod_{i=1}^n a_i\right)^\frac{1}{n}$$
+Exponentiating over $n$ gives the desired inequality.

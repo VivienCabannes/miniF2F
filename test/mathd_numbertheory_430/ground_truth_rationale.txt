@@ -1,0 +1,12 @@
+We start off by replacing $C$ with $A+B$ and changing the form of the two-digit integer in the second equation. \begin{align*}
+10A+A-B&=2\times(A+B)\quad\Rightarrow\\
+11A-B&=2A+2B\quad\Rightarrow\\
+9A&=3B\quad\Rightarrow\\
+3A&=B
+\end{align*}Now we replace $C$, change the two-digit integer, and then substitute $B$ with $3A$ in the third equation. \begin{align*}
+(A+B)\times B&=10A+A+A\quad\Rightarrow\\
+&=12A\quad\Rightarrow\\
+(A+3A)\times3A&=12A\quad\Rightarrow\\
+(4A)\times3A&=12A\quad\Rightarrow\\
+12(A)^2&=12A
+\end{align*}For $(A)^2$ to equal $A$, $A$ must equal 1. Since $3A=B$, $B=3$. That means $A+B=C=4$. So the sum of the three digits is $1+3+4=8$.

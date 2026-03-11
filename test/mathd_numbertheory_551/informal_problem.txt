@@ -1,0 +1,1 @@
+Determine the remainder of 1529 (mod 6). Show that it is 5.

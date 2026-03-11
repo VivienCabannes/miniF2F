@@ -1,0 +1,16 @@
+We can rewrite $xyz=1$ as $\frac{1}{z}=xy$.
+
+Substituting into one of the given equations, we have 
+$x+xy=5$
+$x(1+y)=5$
+$\frac{1}{x}=\frac{1+y}{5}.$
+
+We can substitute back into $y+\frac{1}{x}=29$ to obtain
+$y+\frac{1+y}{5}=29$
+$5y+1+y=145$
+$y=24.$
+
+We can then substitute once again to get
+$x=\frac15$
+$z=\frac{5}{24}.$
+Thus, $z+\frac1y=\frac{5}{24}+\frac{1}{24}=\frac{1}{4}$, so $m+n=005$.

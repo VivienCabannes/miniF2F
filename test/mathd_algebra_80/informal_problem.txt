@@ -1,0 +1,1 @@
+Solve  \[\frac{x-9}{x+1}=2\]for $x$. Show that it is -11.

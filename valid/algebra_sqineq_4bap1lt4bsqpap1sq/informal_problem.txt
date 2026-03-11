@@ -1,0 +1,1 @@
+For any two real numbers a and b, show that $4b(a+1)\leq 4b^2+(a+1)^2$.

@@ -1,0 +1,1 @@
+Given that $x+y = 7$ and $3x+y = 45,$ evaluate $x^2-y^2.$ Show that it is 217.

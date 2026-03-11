@@ -1,0 +1,5 @@
+The given conditions imply that $$
+x^2 + ax + b = (x-a)(x-b) = x^2 -(a+b)x + ab,
+$$ so $$
+a+b = -a \quad\text{and}\quad ab = b.
+$$ Since $b \neq 0$, the second equation implies that $a=1$. The first equation gives $b=-2$, so $(a,b) = (1,-2)$.

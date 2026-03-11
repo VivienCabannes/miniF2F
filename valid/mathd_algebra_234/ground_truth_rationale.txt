@@ -1,0 +1,1 @@
+With common ratio $\frac{5}{3}$, and first term $\frac{27}{125}$, we simply take: $\frac{27}{125}\times\left(\frac{5}{3}\right)^{5}$ which yields $\frac{25}{9}.$

@@ -1,0 +1,6 @@
+If the coordinates of point $A$ are $(x,y)$ then $x$ and $y$ must satisfy the equations of both lines (as $A$ is on both lines). Substituting the first equation into the second gives: \begin{align*}
+2x+5y &=11\\
+6y+5y&= 11\\
+11y&= 11\\
+y &= 1.
+\end{align*}So now $x = 3y = 3$, and so the coordinates of point $A$ are $(3,1)$. The sum of these is $3+1 = 4$.

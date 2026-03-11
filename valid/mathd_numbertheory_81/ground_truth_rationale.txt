@@ -1,0 +1,1 @@
+$71 = 23 \cdot 3 + 2 \Rightarrow 71 \equiv 2 \pmod{3}$.

@@ -1,0 +1,2 @@
+If $p \mid n$, then $p$ divides any multiple of $n$. In particular, $p \mid n \times n$ so $n^2 \equiv 0 \pmod{p}$.
+Reciprocally, if $n^2 \equiv 0 \pmod{p}$ then $p | n^2$. The prime factors in the prime decomposition of $n$ and $n^2$ are identical, so if $p$ divides $n^2$, it also necessarily divides $n$, hence $p \mid n$.

@@ -1,0 +1,4 @@
+We have that $-3 \times (f + 3z) = -3 \times 11$. Summing this with the second hypothesis, we get:
+$$(-3 \times (f + 3z)) + 3(f - 1) - 5z = -33 - 68$$
+So $-9z-3-5z=-101$, and $z = \frac{-101+3}{-14} = 7$.
+As a result, $f = 11 - 3z = 11 - 21 = -10$.

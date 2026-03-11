@@ -1,0 +1,5 @@
+We show the result by induction on $n$. The result is trivial for $n=1$. Let us assume it is true for $n \geq 1$.
+We have that $\left(\sum_{k=0}^{(n+1)-1}k\right)^2 = \left(\left(\sum_{k=0}^{n-1}k\right) + n\right)^2 = \left(\sum_{k=0}^{n-1}k\right)^2 + n^2 + 2n\left(\sum_{k=0}^{n-1}k\right)$. Using the induction hypothesis, we have:
+$\left(\sum_{k=0}^{(n+1)-1}k\right)^2 = \sum_{k=0}^{n-1}k^3 + n^2 + 2n\left(\sum_{k=0}^{n-1}k\right)$.
+However, $\left(\sum_{k=0}^{n-1}k\right) = \frac{n(n-1)}{2}$ so $n^2 + 2n\left(\sum_{k=0}^{n-1}k\right) = n^2 + (n^3 - n^2) = n^3$ and $\left(\sum_{k=0}^{(n+1)-1}k\right)^2 = \sum_{k=0}^{(n+1)-1}k^3$, proving the result in $n+1$.
+By induction, we have that the result is true for any natural number $n$.

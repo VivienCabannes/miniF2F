@@ -1,0 +1,22 @@
+Note that each given equation is of the form $f(k)=k^2x_1+(k+1)^2x_2+(k+2)^2x_3+(k+3)^2x_4+(k+4)^2x_5+(k+5)^2x_6+(k+6)^2x_7$ for some $k\in\{1,2,3\}.$
+
+When we expand $f(k)$ and combine like terms, we obtain a quadratic function of $k:$ $f(k)=ak^2+bk+c,$ where $a,b,$ and $c$ are linear combinations of $x_1,x_2,x_3,x_4,x_5,x_6,$ and $x_7.$ 
+
+We are given that
+$\begin{alignat*}{10}
+f(1)&=\phantom{42}a+b+c&&=1, \\
+f(2)&=4a+2b+c&&=12, \\
+f(3)&=9a+3b+c&&=123,
+\end{alignat*}$
+and we wish to find $f(4).$
+
+We eliminate $c$ by subtracting the first equation from the second, then subtracting the second equation from the third:
+$\begin{align*}
+3a+b&=11, \\
+5a+b&=111.
+\end{align*}$
+By either substitution or elimination, we get $a=50$ and $b=-139.$ Substituting these back produces $c=90.$
+
+Finally, the answer is $f(4)=16a+4b+c=334.$
+
+~Azjps

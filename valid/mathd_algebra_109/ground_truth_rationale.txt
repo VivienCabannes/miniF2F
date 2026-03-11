@@ -1,0 +1,7 @@
+We plug in $x = 4$: \begin{align*}
+3(4) + 2y &= 12\\
+12 + 2y &= 12\\
+y &= 0.
+\end{align*}
+
+Therefore, $b = 0$.

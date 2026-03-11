@@ -1,0 +1,1 @@
+Turning our sentence into math we have \[39500=123n+17\]and we want to solve for $n$.  That gives  \[n=\frac{39500-17}{123}=\frac{39483}{123}=321.\]

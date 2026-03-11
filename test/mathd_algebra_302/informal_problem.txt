@@ -1,0 +1,1 @@
+Evaluate $\left(\frac{i}{2}\right)^2$. Show that it is -\frac{1}{4}.

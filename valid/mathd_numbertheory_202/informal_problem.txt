@@ -1,0 +1,1 @@
+What is the units digit of $19^{19}+99^{99}$? Show that it is 8.

@@ -1,0 +1,1 @@
+Note that $15 \equiv 62 \pmod{47}$, so we can write the given congruence as $2n \equiv 62 \pmod{47}$.  Since 2 is relatively prime to 47, we can divide both sides by 2, to get $n \equiv 31 \pmod{47}$.

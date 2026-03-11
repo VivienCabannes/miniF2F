@@ -1,0 +1,2 @@
+We have that $(x + 7i)(x - 7i) = x^2 + 7ix - 7ix - (7i)^2 = x^2 - 49 i^2$.
+Since $i^2=-1$, we have $(x + 7i)(x - 7i) = x^2+49$.

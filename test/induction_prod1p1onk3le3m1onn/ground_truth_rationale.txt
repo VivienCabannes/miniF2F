@@ -1,0 +1,6 @@
+We can prove this by induction on n. For the base case, $n=1$, the statement is trivial.
+For the inductive case, we assume $\prod_{k=1}^{n_0} (1 + 1/k^3) \leq 3 - 1/n_0$.
+Therefore, we have $\prod_{k=1}^{n_0+1} (1 + 1/k^3) \leq (3-1/n_0) (1 + 1/(n_0+1)^3) = 3 + \frac{3}{(n_0+1)^3}-\frac{1}{n_0}-\frac{1}{n_0 (n_0+1)^3}$.
+It hence suffices to show that $\frac{3}{(n_0+1)^3}+\frac{1}{n_0+1} \leq \frac{1}{n_0} + \frac{1}{n_0 (n_0+1)^3}$, which is equivalent to
+$3n_0 + n_0 (n_0+1)^2 \leq (n_0+1)^3 + 1$. Simplifying, we get
+$n_0^2 - n_0 + 2 \geq 0$. This is obviously true for $n\geq 1$.

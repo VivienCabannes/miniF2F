@@ -1,0 +1,1 @@
+Let $x$ be the son's age today and his father's age $y$.  We know: $5x = y$, and that $(x -3) + (y -3) = 30$.  Substituting the first equation into the second, we get: $6x = 36$, and thus, $x=6$.

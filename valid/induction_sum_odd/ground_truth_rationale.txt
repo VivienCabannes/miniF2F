@@ -1,0 +1,4 @@
+We show the result by induction on $n$. The result is trivial for $n=1$. Let us assume it is true for $n \geq 1$.
+We have that $\sum_{k=0}^{(n+1)-1} (2k + 1) = \sum_{k=0}^{n-1} (2k + 1) + (2n + 1)$.
+The induction hypothesis tells us that $\sum_{k=0}^{n-1} (2k + 1) = n^2$. So $\sum_{k=0}^{(n+1)-1} (2k + 1) = n^2 + 2n +1 = (n+1)^2$ and the result is true for $n+1$.
+By induction, we conclude that the result is true for all positive integer $n$.

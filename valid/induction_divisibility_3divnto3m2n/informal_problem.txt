@@ -1,0 +1,1 @@
+Show that for any natural number $n \in \mathbb{N}$, $3 \mid n^3 + 2n$ .

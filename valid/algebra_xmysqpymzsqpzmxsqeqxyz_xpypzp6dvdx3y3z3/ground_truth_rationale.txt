@@ -1,0 +1,3 @@
+We have $x^3 + y^3 + z^3 - 3xyz = (x+y+z)(x^2+y^2+z^2-xy-xz-yz) = \frac{1}{2}(x+y+z)\left((x-y)^2+(y-z)^2+(z-x)^2\right)$.
+Using the hypothesis,  $x^3 + y^3 + z^3 - 3xyz = \frac{xyz}{2}(x+y+z)$. Thus, $x^3 + y^3 + z^3 = \frac{(x+y+z+6)(xyz)}{2}$.
+Finally, since $xyz = (x-y)^2 + (y-z)^2 + (z-x)^2 = 2(x^2+y^2+z^2-xy-xz-yz)$: so $xyz=2k$ for some integer $k$ and we have $x^3 + y^3 + z^3 = k(x+y+z+6)$, which completes the proof.

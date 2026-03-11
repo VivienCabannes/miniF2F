@@ -1,0 +1,6 @@
+We first expand the expression:
+$\frac{(n+2)!-(n+1)!}{n!} = \frac{(n+2)(n+1)n!-(n+1)n!}{n!}.$
+We can now divide out a common factor of $n!$ from each term of the numerator:
+$(n+2)(n+1)-(n+1).$
+Factoring out $(n+1),$ we get $[(n+2)-1](n+1) = (n+1)^2,$
+which proves that the answer is $\textbf{(D) } \text{a perfect square}.$

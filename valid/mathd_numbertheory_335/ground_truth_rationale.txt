@@ -1,0 +1,1 @@
+Let $n$ be Rachel's favorite number.  Then $n \equiv 5 \pmod{7}$, so $5n \equiv 5 \cdot 5 \equiv 25 \equiv 4 \pmod{7}$.

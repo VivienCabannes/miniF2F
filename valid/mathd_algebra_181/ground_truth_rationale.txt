@@ -1,0 +1,1 @@
+Multiplying both sides by $n-3$, we have $n+5 = 2(n-3)$.  Expanding gives $n+5 = 2n - 6$, and solving this equation gives $n=11$.

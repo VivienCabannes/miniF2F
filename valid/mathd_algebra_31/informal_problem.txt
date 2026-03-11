@@ -1,0 +1,1 @@
+If $ \sqrt{x+\!\sqrt{x+\!\sqrt{x+\!\sqrt{x+\cdots}}}}=9$, find $x$. Show that it is 72.

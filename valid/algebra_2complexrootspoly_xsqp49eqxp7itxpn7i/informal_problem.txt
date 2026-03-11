@@ -1,0 +1,1 @@
+Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.

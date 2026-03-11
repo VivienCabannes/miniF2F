@@ -1,0 +1,5 @@
+Since $m \leq n$, we can have $k=n-m$ to be a natural number. Then we can do induction on $k$.
+Base case is trivial when $k=0$.
+For the inductive case, we assume that $f(2^m) | f(2^{m+k})$, which means that there exists a natural number $p$ where $p * f(2^m) = f(2^{m+k})$.
+Then, $f(2^{m+k+1}) = 4^{2^{m+k+1}} + 6^{2^{m+k+1}} + 9^{2^{m+k+1}} = (4^{2^{m+k}})^2 + (6^{2^{m+k}})^2 + (9^{2^{m+k}})^2 = f(2ˆ{m+k})^2 -  2 *(4^{2^{m+k}}*6^{2^{m+k}} + 4^{2^{m+k}}*9^{2^{m+k}} + 6^{2^{m+k}}*9^{2^{m+k}}) \equiv -2 * (2^{2^{m+k}*2}*2^{2^{m+k}}*3^{2^{m+k}} + 2^{2^{m+k}*2}*3^{2^{m+k}*2} + 2^{2^{m+k}}*3^{2^{m+k}}*3^{2^{m+k}*2} \equiv -2 * 2^{2^{m+k}}*3^{2^{m+k}} *(f(2^m))) \equiv 0 \pmod {f(2^m)}$.
+Hence by induction, the statement holds.

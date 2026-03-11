@@ -1,0 +1,1 @@
+Show that for any real number $a$, $a(2-a)\leq 1$.

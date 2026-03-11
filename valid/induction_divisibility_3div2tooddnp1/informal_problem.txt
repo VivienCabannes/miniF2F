@@ -1,0 +1,1 @@
+For a natural number $n$, show that $3 \mid (2^{2n+1}+1)$.

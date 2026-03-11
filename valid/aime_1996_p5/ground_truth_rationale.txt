@@ -1,0 +1,3 @@
+By [[Vieta's formulas]] on the polynomial $P(x) = x^3+3x^2+4x-11 = (x-a)(x-b)(x-c) = 0$, we have $a + b + c = s = -3$, $ab + bc + ca = 4$, and $abc = 11$. Then
+<center>$t = -(a+b)(b+c)(c+a) = -(s-a)(s-b)(s-c) = -(-3-a)(-3-b)(-3-c)$</center>
+This is just the definition for $-P(-3) = 023$.

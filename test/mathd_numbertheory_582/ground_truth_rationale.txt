@@ -1,0 +1,1 @@
+We see that $(n + 4) + (n + 6) + (n + 8) = 3n + 18.$ We can see that this must be a multiple of $9,$ since $18$ is a multiple of $9$ and $3n$ is as well, since we are given that $n$ is a multiple of $3.$ Therefore, our answer is $0.$

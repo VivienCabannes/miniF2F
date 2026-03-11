@@ -1,0 +1,7 @@
+The [[logarithm]]ic notation doesn't tell us much, so we'll first convert everything to the equivalent exponential forms.
+
+$x^{24}=w$, $y^{40}=w$, and $(xyz)^{12}=w$. If we now convert everything to a power of $120$, it will be easy to isolate $z$ and $w$.
+
+$x^{120}=w^5$, $y^{120}=w^3$, and $(xyz)^{120}=w^{10}$.
+
+With some substitution, we get $w^5w^3z^{120}=w^{10}$ and $\log_zw=060$.

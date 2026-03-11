@@ -1,0 +1,10 @@
+If we look at the terms of the sequence mod 4, we see that they follow a pattern of period 6: \begin{align*}
+F_1 &\equiv 1\pmod{4}, \\
+F_2 &\equiv 1\pmod{4}, \\
+F_3 &\equiv 2\pmod{4}, \\
+F_4 &\equiv 3\pmod{4}, \\
+F_5 &\equiv 1\pmod{4}, \\
+F_6 &\equiv 0\pmod{4}, \\
+F_7 &\equiv 1\pmod{4}, \\
+F_8 &\equiv 1\pmod{4},~\ldots
+\end{align*} Then we see that the terms repeat.  Therefore, the $100^{\text{th}}$ term is the same as the $4^{\text{th}}$ term, and thus has a remainder of $3$ when divided by 4.

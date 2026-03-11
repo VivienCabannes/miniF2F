@@ -1,0 +1,17 @@
+Any logarithm in the form $\log_{a^b} c = \frac{1}{b} \log_a c.$ This can be proved easily by using change of base formula to base $a.$
+
+So, the original equation $\log_2{(\log_{2^4}{n})} = \log_{2^2}{(\log_{2^2}{n})}$ becomes $\log_2\left({\frac{1}{4}\log_{2}{n}}\right) = \frac{1}{2}\log_2\left({\frac{1}{2}\log_2{n}}\right).$
+Using log property of addition, we expand both sides and then simplify:
+$\begin{align*}
+\log_2{\frac{1}{4}}+\log_2{(\log_{2}{n}}) &= \frac{1}{2}\left[\log_2{\frac{1}{2}} +\log_{2}{(\log_2{n})}\right] \\
+\log_2{\frac{1}{4}}+\log_2{(\log_{2}{n}}) &= \frac{1}{2}\left[-1 +\log_{2}{(\log_2{n})}\right] \\
+-2+\log_2{(\log_{2}{n}}) &= -\frac{1}{2}+ \frac{1}{2}(\log_{2}{(\log_2{n})}).
+\end{align*}$
+Subtracting $\frac{1}{2}(\log_{2}{(\log_2{n})})$ from both sides and adding $2$ to both sides gives us $\frac{1}{2}(\log_{2}{(\log_2{n})}) = \frac{3}{2}.$
+Multiplying by $2,$ exponentiating, and simplifying gives us
+$\begin{align*}
+\log_{2}{(\log_2{n})} &= 3 \\
+\log_2{n}&=8 \\
+n&=256.
+\end{align*}$
+Adding the digits together, we have $2+5+6=\textbf{(E) } 13.$ 

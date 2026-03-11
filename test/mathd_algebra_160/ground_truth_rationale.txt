@@ -1,0 +1,7 @@
+We can rewrite the problem as the system of equations: \begin{align*}
+N+x &= 97\\
+N+5x &= 265
+\end{align*}Subtracting these gives: \begin{align*}
+4x &= 265-97=168\\
+x &= 42.
+\end{align*}So now $N = 97-42= 55$. So the charge for a two-hour repair job is $N+2x = \$ 55+2\cdot \$ 42 = \$ 139$.

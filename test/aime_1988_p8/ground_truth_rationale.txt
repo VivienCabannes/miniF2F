@@ -1,0 +1,21 @@
+Let $z = x+y$. By the substitution $z=x+y,$ we rewrite the third property in terms of $x$ and $z,$ then solve for $f(x,z):$
+$\begin{align*}
+zf(x,z-x) &= (z-x)f(x,z) \\
+f(x,z) &= \frac{z}{z-x} \cdot f(x,z-x).
+\end{align*}$
+Using the properties of $f,$ we have
+$\begin{align*}
+f(14,52) &= \frac{52}{38} \cdot f(14,38) \\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot f(14,24) \\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot \frac{24}{10} \cdot f(14,10)\\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot \frac{24}{10} \cdot f(10,14)\\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot \frac{24}{10} \cdot \frac{14}{4} \cdot f(10,4)\\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot \frac{24}{10} \cdot \frac{14}{4} \cdot f(4,10)\\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot \frac{24}{10} \cdot \frac{14}{4} \cdot \frac{10}{6} \cdot f(4,6)\\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot \frac{24}{10} \cdot \frac{14}{4} \cdot \frac{10}{6} \cdot \frac{6}{2} \cdot f(4,2)\\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot \frac{24}{10} \cdot \frac{14}{4} \cdot \frac{10}{6} \cdot \frac{6}{2} \cdot f(2,4)\\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot \frac{24}{10} \cdot \frac{14}{4} \cdot \frac{10}{6} \cdot \frac{6}{2} \cdot \frac{4}{2} \cdot f(2,2)\\
+&= \frac{52}{38} \cdot \frac{38}{24} \cdot \frac{24}{10} \cdot \frac{14}{4} \cdot \frac{10}{6} \cdot \frac{6}{2} \cdot \frac{4}{2} \cdot 2\\
+&=364.
+\end{align*}$
+~MRENTHUSIASM (credit given to AoPS)

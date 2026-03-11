@@ -1,0 +1,2 @@
+We have $\binom{n-1}{k} + \binom{n-1}{k-1} = \frac{(n-1)!}{k!(n-1-k)!} + \frac{(n-1)!}{(k-1)!(n-k)!} = \frac{(n-k) (n-1)!}{k!(n-k)!} + \frac{k (n-1)!}{k!(n-k)!}$.
+So $\binom{n-1}{k} + \binom{n-1}{k-1} = \frac{((n-k) + k) (n-1)!}{k!(n-k)!} = \frac{n!}{k!(n-k)!} = \binom{n}{k}$.

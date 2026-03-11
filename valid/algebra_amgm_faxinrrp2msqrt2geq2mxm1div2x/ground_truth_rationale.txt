@@ -1,0 +1,1 @@
+The statement is equivalent to showing $x+\frac{1}{2x} \geq \sqrt{2}$. By AM-GM, $x + \frac{1}{2x} \geq 2\sqrt{\frac{x}{2x}} = \sqrt{2}.$

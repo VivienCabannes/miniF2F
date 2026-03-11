@@ -1,0 +1,5 @@
+We have $$
+I = \frac{V}{Z} = \frac{1+i}{2-i}.
+$$ Multiplying the numerator and denominator by the conjugate of the denominator, we get $$
+I = \frac{1+i}{2-i} \cdot \frac{2+i}{2+i} = \frac{1(2) + 1(i) + i(2) + i(i)}{2(2) + 2(i) - i(2) - i(i)} = \frac{1+3i}{5} = \frac{1}{5} + \frac{3}{5}i.
+$$

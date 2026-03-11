@@ -1,0 +1,1 @@
+Developing the square, we get $(-r + (-e))^2 = (-r)^2 + 2 (-r)(-e) + (-e)^2 = 2er + e^2 + r^2$

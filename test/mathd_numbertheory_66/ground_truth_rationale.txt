@@ -1,0 +1,1 @@
+$$194 = 17 \cdot 11 + 7 \implies 194 \equiv 7 \pmod{11}.$$

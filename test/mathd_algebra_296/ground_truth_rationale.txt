@@ -1,0 +1,3 @@
+The new length is $3491-60$, and the new width is $3491+60$.  Thus, the new area is
+
+$$(3491-60)(3491+60)=3491^2-60^2$$$3491^2$ is the area of the original square.  So the change in area is $60^2=3600$.

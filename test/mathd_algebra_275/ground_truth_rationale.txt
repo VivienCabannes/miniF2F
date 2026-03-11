@@ -1,0 +1,7 @@
+We rewrite $\left(\sqrt[4]{11}\right)^{6x+2}$ and then substitute the given equation: \begin{align*}
+\left(\sqrt[4]{11}\right)^{6x+2}&=\left(\sqrt[4]{11}\right)^{6x-6}\cdot \left(\sqrt[4]{11}\right)^{8}\\
+&=\left(\left(\sqrt[4]{11}\right)^{3x-3}\right)^2\cdot\left(11^{1/4}\right)^{8}\\
+&=\left(\frac{1}{5}\right)^2\cdot11^{(8/4)}\\
+&=\frac{1}{25}\cdot121\\
+&=\frac{121}{25}
+\end{align*}

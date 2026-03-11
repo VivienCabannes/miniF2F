@@ -1,0 +1,1 @@
+We know that $\gcd(a,b) \cdot \mathop{\text{lcm}}[a,b] = ab$ for all positive integers $a$ and $b$.  Hence, in this case, the other number is $8 \cdot 3720/120 = 248$.

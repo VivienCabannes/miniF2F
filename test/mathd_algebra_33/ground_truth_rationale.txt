@@ -1,0 +1,3 @@
+$\frac{y}{x}=\frac25$ and $\frac{z}{y}=\frac{7}{10}$. Multiplying these, \[
+\frac25\cdot\frac{7}{10}=\frac y x\cdot\frac z y=\frac z x=\frac{7}{25}
+\]

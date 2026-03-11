@@ -1,0 +1,6 @@
+Multiplying out all of the [[denominator]]s, we get:
+
+$\begin{align*}104(n+k) &< 195n< 105(n+k)\\
+0 &< 91n - 104k < n + k\end{align*}$
+
+Since $91n - 104k < n + k$, $k > \frac{6}{7}n$. Also, $0 < 91n - 104k$, so $k < \frac{7n}{8}$. Thus, $48n < 56k < 49n$. $k$ is unique if it is within a maximum [[range]] of $112$, so $n = 112$.

@@ -1,0 +1,1 @@
+A number is both a perfect square and a perfect cube if and only if it is a sixth power. The smallest sixth power greater than 10 is $2^6= 64$.

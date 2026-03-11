@@ -1,0 +1,4 @@
+We know that $\sqrt{2}$ is an irrational number.
+If $\sqrt{2}^{\sqrt{2}}$ is rational, we found a solution.
+Otherwise, we consider $a=\sqrt{2}^{\sqrt{2}}$ and $b=\sqrt{2}$.
+Then, we have $a^b=(\sqrt{2}^{\sqrt{2}})^{\sqrt{2}}=\sqrt{2}^{\sqrt{2}\times\sqrt{2}}=\sqrt{2}^2=2$ so $a^b$ is rational, and we found a solution.

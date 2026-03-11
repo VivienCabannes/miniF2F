@@ -1,0 +1,5 @@
+If we expand the left side, we have  \begin{align*}
+(x-p)(x-q) &=x(x-q) -p(x-q)\\
+& = x^2 - qx - px +pq \\
+&= x^2 -(p+q)x + pq.
+\end{align*} The other side of the equation is a constant, since there isn't an $x$ term. So, if we view the equation as a quadratic in $x$, the sum of the roots is $-[-(p+q)] = p+q$.  We know that one of the roots is $r$, so if the other is $s$, we have $r+s = p+q$, so $s = p+q-r$.

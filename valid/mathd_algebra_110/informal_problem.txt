@@ -1,0 +1,1 @@
+Simplify $(2-2i)(5+5i)$, where $i^2 = -1.$ Show that it is 20.

@@ -1,0 +1,1 @@
+How many integers are in the solution set of $|x-2|\leq5.6$ ? Show that it is 11.

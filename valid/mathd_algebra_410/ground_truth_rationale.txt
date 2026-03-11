@@ -1,0 +1,3 @@
+Write $x^2-6x$ as $(x-3)^2-9$ to obtain  \[
+y=(x-3)^2+4.
+\]Since $(x-3)^2\geq0$, we have $y\geq4$.  The value $y=4$ is obtained when $x=3$. (Note: this method of rewriting a quadratic expression is called ``completing the square'').

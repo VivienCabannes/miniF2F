@@ -1,0 +1,1 @@
+We have: $2 < \sqrt{t} < \frac{7}{2}$ so squaring the inequality (which we can do because all the terms in it are positive) gives us  $4 < t <\frac{49}{4}=12.25$.  Therefore, $t$ is an integer between 5 and 12 inclusive, which leaves us with $8$ possible integer values of $t$.

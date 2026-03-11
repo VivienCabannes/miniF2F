@@ -1,0 +1,1 @@
+For any real number a, show that $10a \leq 28a^2 + 1$.

@@ -1,0 +1,1 @@
+If 40 calories is equal to $2\%=\frac{2}{100}=\frac{1}{50}$ of a person's daily requirement, then a person's daily caloric requirement is: $$40\cdot 50=2000$$

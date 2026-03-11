@@ -1,0 +1,7 @@
+If $x \equiv 4 \pmod{19}$ and $y \equiv 7 \pmod{19}$, then \begin{align*}
+(x + 1)^2 (y + 5)^3 &\equiv 5^2 \cdot 12^3 \\
+&\equiv 25 \cdot 1728 \\
+&\equiv 6 \cdot 18 \\
+&\equiv 108 \\
+&\equiv 13 \pmod{19}.
+\end{align*}

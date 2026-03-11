@@ -1,0 +1,1 @@
+Since $f$ and $h$ are inverse functions and $h(2) = 10$, $f(10) = 2$, so $f(f(10)) = f(2)$.  And since $h(1) = 2$, $f(2) = 1$.

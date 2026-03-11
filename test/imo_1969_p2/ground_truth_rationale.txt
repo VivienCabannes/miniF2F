@@ -1,0 +1,3 @@
+Because the period of $\cos(x)$ is $2\pi$, the period of $f(x)$ is also $2\pi$.
+$f(x_1)=f(x_2)=f(x_1+x_2-x_1)$
+We can get $x_2-x_1 = 2k\pi$ for $k\in N^*$. Thus, $x_2-x_1=m\pi$ for some integer $m.$

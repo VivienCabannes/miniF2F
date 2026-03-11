@@ -1,0 +1,1 @@
+The line through points $B$ and $C$ has slope $\dfrac{-1-7}{7-(-1)}=-1$.  Since $(7,-1)$ lies on the line, the line has equation $$y-(-1)=-1(x-7),$$or $y = -x + 6$.  Thus $m=-1$, $b=6$, and $m+b=-1+6=5$.

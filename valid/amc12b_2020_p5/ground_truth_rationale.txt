@@ -1,0 +1,10 @@
+Suppose team $A$ has played $g$ games in total so that it has won $\frac23g$ games.
+It follows that team $B$ has played $g+14$ games in total so that it has won $\frac23g+7$ games.
+
+We set up and solve an equation for team $B$'s win ratio:
+$\begin{align*}
+\frac{\frac23g+7}{g+14}&=\frac58 \\
+\frac{16}{3}g+56&=5g+70 \\
+\frac13g&=14 \\
+g&=\textbf{(C) } 42.
+\end{align*}$

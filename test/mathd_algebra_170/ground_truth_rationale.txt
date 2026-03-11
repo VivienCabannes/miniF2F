@@ -1,0 +1,1 @@
+Getting rid of the absolute value, we have $-5.6 \le x-2 \le 5.6$, or $-3.6 \le x \le 7.6$. Thus, $x$ can be any integer from -3 to 7, inclusive. There are $7-(-3)+1=11$ integers in this range.

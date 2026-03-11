@@ -1,0 +1,1 @@
+We know that there are 125 calories in 8 fluid ounces of Vitamin Water, so we can set up the proportion $\frac{125}{8}=\frac{x}{12}$, where $x$ is the number of calories contained in a 12 fluid ounce bottle. Solving for $x$, we find that $x=\left(\frac{125}{8}\right)(12)=187.5$ calories.

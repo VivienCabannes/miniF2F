@@ -1,0 +1,1 @@
+Show that for any integer $n \geq 3$, we have $n! < n^{n-1}$.

@@ -1,0 +1,2 @@
+$a \pmod 4 \in {0, 1, 2, 3}$.
+Using that for any natural number $k$, $a \equiv b \pmod 4$ implies $a^k \equiv b^k \pmod 4$, we have  $a^2 \pmod 4 \in {0, 1, 4, 9}$. Since $4 \equiv 0 \pmod 4$ and $9 \equiv 1 \pmod 4$, the result follows.
